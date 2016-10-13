@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<form class="cmxform form-horizontal tasi-form" id="signupForm" method="get" action="" novalidate="novalidate" ng-submit="vm.submit(vm.form)">
+    <div class="form-group ">
+        <label for="_email" class="control-label col-lg-2">Email</label>
+        <div class="col-lg-10">
+            <input class="form-control " id="_email" name="email" type="email" ng-model="vm.form.email">
+        </div>
+    </div>
+    <div class="form-group ">
+        <label for="_nickname" class="control-label col-lg-2">nickname</label>
+        <div class="col-lg-10">
+            <input class=" form-control" id="_nickname" name="nickname" type="text" ng-model="vm.form.nickname">
+        </div>
+    </div>
+    <div class="form-group ">
+        <label for="_password" class="control-label col-lg-2">Password</label>
+        <div class="col-lg-10">
+            <input class="form-control " id="_password" name="password" type="password" ng-model="vm.form.password">
+        </div>
+    </div>
+    <div class="form-group ">
+        <label for="_confirm_password" class="control-label col-lg-2">Confirm Password</label>
+        <div class="col-lg-10">
+            <input class="form-control " id="_confirm_password" name="confirm_password" type="password" ng-model="vm.form.password">
+        </div>
+    </div>
+    <div class="form-group ">
+        <label for="_graphic_code" class="control-label col-lg-2 col-sm-3">Graphic verification code</label>
+        <div class="col-lg-10 col-sm-9">
+            <input type="text" class="checkbox form-control" id="_graphic_code" name="_graphic_code">
+            <img src="" alt="图形验证码"/>
+        </div>
+    </div>
+    <div class="form-group ">
+        <input type="checkbox" style="width: 20px" class="checkbox form-control" id="_agree" name="agree">
+        <label for="_agree" class="control-label col-lg-2 col-sm-3">Agree to Our Policy</label>
+        <a href="">用户服务协议</a>
+    </div>
+    <div class="form-group">
+        <div class="col-lg-offset-2 col-lg-10">
+            <button class="btn btn-danger" type="submit">Save</button>
+            <button class="btn btn-default" type="button">Cancel</button>
+        </div>
+    </div>
+</form>
+</body>
+</html>
